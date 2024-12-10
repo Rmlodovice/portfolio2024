@@ -203,6 +203,7 @@ body {
     opacity: 1;
 }
 
+
 @media all and (min-width: 0px) and (max-width: 100) {
     body {
         background-color: rgb(255,0,0);
