@@ -1,0 +1,25 @@
+/* Background images */
+#landing {
+    background-image: url('../pictures/background.jpg');
+    background-size: cover;
+}
+
+#project {
+    background-image: url('../pictures/project-background.jpg');
+    background-size: cover;
+}
+
+#about {
+    background-image: url('../pictures/about-background.jpg');
+    background-size: cover;
+}
+
+#attendance {
+    background-image: url('../pictures/attendance-background.jpg');
+    background-size: cover;
+}
+
+#contact {
+    background-image: url('../pictures/contact-background.jpg');
+    background-size: cover;
+}
