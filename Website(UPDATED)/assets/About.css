@@ -1,0 +1,51 @@
+#about
+{
+    background: transparent;
+}
+
+.abouttitle {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: -5rem;
+    display: flex;
+    color: white;
+}
+
+.profile_img {
+    border-radius: 15px;
+    width: 20rem;
+    height: 23rem;
+    margin-top: 20px;
+}
+
+.abouttitle {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.des {
+    font-size: 19px;
+    text-align: justify;
+    margin-left: 3rem;
+    width: 30rem;
+    margin-top: 4.5rem;
+}
+
+section .container3 {
+    /* Add styles for Container 3 */
+    position: relative;
+    top: 180px;
+    width: 50%;
+    height: 60%;
+    display: block;
+    padding: 100px 100px;
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+    background: transparent;
+    backdrop-filter: blur(8px);
+    
+}
+

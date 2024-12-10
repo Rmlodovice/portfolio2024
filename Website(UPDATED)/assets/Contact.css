@@ -1,0 +1,46 @@
+#contact
+{
+    background: transparent;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    font-weight: 1000;
+    color: white;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section .container5 {
+    /* Add styles for Container 5 */
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: 45%;
+    display: block;
+    padding: 100px 100px;
+    border-radius: 10px;
+    border:2px solid rgb(255, 255, 255);
+    background:transparent;
+    backdrop-filter: blur(10px);
+    
+}

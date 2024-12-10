@@ -1,0 +1,14 @@
+section .container4 {
+    /* Add styles for Container 5 */
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: 45%;
+    display: block;
+    padding: 100px 100px;
+    border-radius: 10px;
+    border:2px solid rgb(255, 255, 255);
+    background:transparent;
+    backdrop-filter: blur(5px);
+    
+}
