@@ -143,27 +143,34 @@ section .container1 span
 }
 header nav a:nth-child(1).active ~ .indicator
 {
-    transform: translateX(calc(110px * 0.1));
+    scroll-behavior: smooth;
+    width: 5rem;
+    transform: translateX(calc(0.05px * 1));
     background-color: #02C6FF;
 }
 header nav a:nth-child(2).active ~ .indicator
 {
     transform: translateX(calc(85px * 1));
+    scroll-behavior: smooth;
     background-color: #FF9702;
 }
 header nav a:nth-child(3).active ~ .indicator
 {
     transform: translateX(calc(78px * 2.04));
+    scroll-behavior: smooth;
     background-color: #037e94;
 }
 header nav a:nth-child(4).active ~ .indicator
 {
+    scroll-behavior: smooth;
+    width: 100px;
     transform: translateX(calc(76px * 2.85));
     background-color: #d31212c2;
-    width: 100px;
+    
 }
 header nav a:nth-child(5).active ~ .indicator
 {
+    scroll-behavior: smooth;
     transform: translateX(calc(74px * 4.1));
     background-color: #5E5E5E;
 }

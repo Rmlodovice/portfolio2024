@@ -125,11 +125,6 @@ header nav a.active .text
     }
 }
 
-/* Apply smooth scrolling behavior to the body */
-body {
-    scroll-behavior: smooth;
-}
-
 
 #project, #about {
     color: rgb(255,255,255);
