@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
+    box-sizing: border-box;
 }
 header
 {
@@ -116,6 +117,9 @@ header nav a.active .text
     opacity: 1;
 }
 
+#landing {
+    color: rgb(0, 0, 0);
+}
 
 .landingtitle {
     p {

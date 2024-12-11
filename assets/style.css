@@ -8,7 +8,7 @@ body {
     overflow: hidden;
 }
 
-section .container1
+section .container1 
 {
     position: relative;
     top: 200px;
@@ -20,7 +20,7 @@ section .container1
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
     border:2px solid white;
     background:transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 section .container2
 {   
@@ -71,6 +71,7 @@ section .container5
 }
 .hidden
 {
+
     opacity: 0;
     filter: blur(5px);
     transform: scale(50%);
@@ -115,21 +116,23 @@ section .container1 span
 .nextpage
 {
     background-color: #fff;
+
     border: none;
     border-radius: 10px;
     padding: 10px 10px;
     display: inline-block;
     text-decoration: none;
     color: #000;
-    transition: 0.2s;
+    transition: 3s;
 }
 .nextpage:hover
-{
+{   
     color: #FF9702;
 }
 .container1 .container2 .container3 .container4 .container5
 {
     box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    
 }
 .indicator
 {
@@ -143,7 +146,6 @@ section .container1 span
 }
 header nav a:nth-child(1).active ~ .indicator
 {
-    scroll-behavior: smooth;
     width: 5rem;
     transform: translateX(calc(0.05px * 1));
     background-color: #02C6FF;
@@ -151,18 +153,15 @@ header nav a:nth-child(1).active ~ .indicator
 header nav a:nth-child(2).active ~ .indicator
 {
     transform: translateX(calc(85px * 1));
-    scroll-behavior: smooth;
     background-color: #FF9702;
 }
 header nav a:nth-child(3).active ~ .indicator
 {
     transform: translateX(calc(78px * 2.04));
-    scroll-behavior: smooth;
     background-color: #037e94;
 }
 header nav a:nth-child(4).active ~ .indicator
 {
-    scroll-behavior: smooth;
     width: 100px;
     transform: translateX(calc(76px * 2.85));
     background-color: #d31212c2;
@@ -170,7 +169,6 @@ header nav a:nth-child(4).active ~ .indicator
 }
 header nav a:nth-child(5).active ~ .indicator
 {
-    scroll-behavior: smooth;
     transform: translateX(calc(74px * 4.1));
     background-color: #5E5E5E;
 }
