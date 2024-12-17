@@ -3,28 +3,26 @@
     background: transparent;
 }
 
-
-
 .projecttitle {
     position: relative;
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 1rem;
 }
 
 .projecttitle {
     h1 {
-        font-size: 50px;
+        font-size: 4rem;
     }
     h2 {
         color: black;
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 2%;
+        margin-bottom: 8%;
     }
     a {
-        margin-top: 40px;
-        font-size: 35px;
+        margin-top: 20%;
+        font-size: 3rem;
         color: green;
     }
 }
@@ -32,14 +30,14 @@
 section .container2 {
     /* Add styles for Container 2 */
     position: relative;
-    top: 120px;
-    width: 30%;
-    height: 45%;
+    top: 20%;
+    width: auto;
+    height: 24rem;
     display: block;
     padding: 100px 100px;
     border-radius: 10px;
     border:2px solid rgb(255, 255, 255);
     background:transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4rem);
     
 }

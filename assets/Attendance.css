@@ -1,10 +1,30 @@
+
 .excelsheet {
+    position: relative;
+    width: auto;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
+    margin: auto;
+    box-sizing: border-box;
     height: 52rem;
-    width: 118rem;
     margin-top: 6rem;
     border: 2px solid rgb(255, 255, 255);
     
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+    .excelsheet {
+        width: 70%; /* Use percentage to make it fluid */
+        height: 40rem; /* Adjust height for smaller screens */
+        margin-top: 2rem; /* Reduce margin on top */
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .excelsheet {
+        width: 534px; /* Full width on mobile */
+        height: 40rem; /* Further reduce height */
+      
+    }
 }

@@ -1,5 +1,4 @@
-#about
-{
+#about {
     background: transparent;
 }
 
@@ -8,44 +7,89 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: -5rem;
+    margin-top: -5rem; /* Adjusted margin for the header */
     display: flex;
     color: white;
 }
 
 .profile_img {
-    border-radius: 15px;
-    width: 20rem;
-    height: 23rem;
-    margin-top: 20px;
+    border-radius: 1rem;
+    width: 20rem; /* 320px */
+    height: 23rem; /* 368px */
+    margin-top: 1rem; /* 16px */
 }
 
-.abouttitle {
-    h1 {
-        font-size: 50px;
-    }
+.abouttitle h1 {
+    font-size: 3rem; /* 48px */
 }
 
 .des {
-    font-size: 19px;
+    font-size: 1.1rem; /* 17.6px */
     text-align: justify;
-    margin-left: 3rem;
-    width: 30rem;
-    margin-top: 4.5rem;
+    margin-left: 4%;
+    width: 30rem; /* 480px */
+    margin-top: 4.5rem; /* 72px */
 }
 
 section .container3 {
-    /* Add styles for Container 3 */
     position: relative;
-    top: 180px;
-    width: 50%;
-    height: 60%;
+    top: 20%;
+    width: auto;
+    height: 30rem;
     display: block;
     padding: 100px 100px;
-    border-radius: 30px;
-    border: 3px solid rgb(255, 255, 255);
-    background: transparent;
-    backdrop-filter: blur(8px);
-    
+    border-radius: 10px;
+    border:2px solid rgb(255, 255, 255);
+    background:transparent;
+    backdrop-filter: blur(4rem);
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .profile_img {
+        width: 15rem; /* 240px */
+        height: 18rem; /* 288px */
+    }
+
+    .abouttitle h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    .des {
+        font-size: 1rem; /* 16px */
+        margin-left: 3%;
+        width: 80%; /* Make width responsive */
+        margin-top: 2.5rem; /* 40px */
+    }
+
+    section .container3 {
+        width: 80%; /* Reduce width on smaller screens */
+        padding: 4rem; /* 64px */
+        top: 7rem; /* 112px */
+    }
+}
+
+/* Media query for very small screens */
+@media screen and (max-width: 480px) {
+    .profile_img {
+        width: 12rem; /* 192px */
+        height: 15rem; /* 240px */
+    }
+
+    .abouttitle h1 {
+        font-size: 2rem; /* 32px */
+    }
+
+    .des {
+        font-size: 0.9rem; /* 14.4px */
+        margin-left: 2%;
+        width: 90%; /* Full width for smaller screens */
+        margin-top: 2rem; /* 32px */
+    }
+
+    section .container3 {
+        width: 90%; /* Full width for smaller screens */
+        padding: 3rem; /* 48px */
+        top: 5rem; /* 80px */
+    }
+}

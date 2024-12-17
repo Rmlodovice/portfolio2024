@@ -8,55 +8,6 @@ body {
     overflow: hidden;
 }
 
-section .container1 
-{
-    position: relative;
-    top: 200px;
-    width: 60%;
-    height: 40%;
-    display: block;
-    padding: 100px 100px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-    border:2px solid white;
-    background:transparent;
-    backdrop-filter: blur(2px);
-}
-section .container2
-{   
-    position: relative;
-    top: 200px;
-    width: 60%;
-    height: 40%;
-    display: block;
-    padding: 100px 100px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-}
-
-section .container3
-{
-    position: relative;
-    top: 200px;
-    width: 60%;
-    height: 40%;
-    display: block;
-    padding: 100px 100px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-}
-
-section .container5
-{
-    position: relative;
-    top: 200px;
-    width: 60%;
-    height: 40%;
-    display: block;
-    padding: 100px 100px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-}
 .xtraspace
 {
     color: rgb(255,55,0);
@@ -113,18 +64,18 @@ section .container1 span
     align-content: center;
     text-align: center;
 }
-.nextpage
-{
+.nextpage {
     background-color: #fff;
-
     border: none;
-    border-radius: 10px;
-    padding: 10px 10px;
+    border-radius: 0.625rem; /* 10px */
+    padding: 1rem 2rem; /* Adjusted padding for better mobile appearance */
     display: inline-block;
     text-decoration: none;
     color: #000;
-    transition: 3s;
+    transition: 0.3s; /* Adjust transition duration for better performance */
+    font-size: 1rem; /* Default font size */
 }
+
 .nextpage:hover
 {   
     color: #FF9702;
@@ -212,6 +163,10 @@ body {
 @media all and (min-width: 0px) and (max-width: 100) {
     body {
         background-color: rgb(255,0,0);
+    }
+    .nextpage {
+        padding: 0.75rem 1.5rem; /* Reduce padding for mobile */
+        font-size: 0.875rem; /* Adjust font size for better readability */
     }
 }
 
