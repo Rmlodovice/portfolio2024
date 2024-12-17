@@ -44,6 +44,27 @@ section .container3 {
     backdrop-filter: blur(4rem);
 }
 
+.download-btn {
+    display: inline-block ;
+    margin-top: 4rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0ad0f3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #FF9702;
+}
+
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .profile_img {

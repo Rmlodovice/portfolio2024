@@ -5,7 +5,7 @@ html {
 
 body {
     /* Prevent page from being zoomed */
-    overflow: hidden;
+    overflow: 2; 
 }
 
 .xtraspace

@@ -1,136 +1,101 @@
-#contact {
-  background: transparent;
+#contact
+{
+    background: transparent;
 }
 
 .contact-info {
-  text-align: center;
+    text-align: center;
 }
 
 .contact-info h1 {
-  font-size: 2rem; /* Use rem for scalable font size */
-  font-weight: 1000;
-  color: white;
+    font-size: 35px;
+    font-weight: 1000;
+    color: white;
 }
 
 .contact-info p {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: white;
 }
 
 .contact-info ul {
-  list-style: none;
-  padding: 0;
-  color: white;
+    list-style: none;
+    padding: 0;
+    color: white;
 }
 
 .contact-info li {
-  font-size: 1rem; /* Use rem for scalability */
-  margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container5 {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-/* Adjust contact image styles */
-.contact_img {
-  border-radius: 2rem;
-}
-
-/* Create two columns that float next to each other */
-.column {
-  color: white;
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container5 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1rem;
+  }
+  
+  .contact_img {
+    border-radius: 2rem;
+  }
+  /* Create two columns that float next to eachother */
+  .column {
+    color: white;
+    float: left;
+    width: 50%;
+    margin-top: 5%;
+    padding: 1.5rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+section .container5 {
+    /* Add styles for Container 5 */
+    position: relative;
+    top: 10%;
+    width: auto;
+    height: 90%;
+    display: block;
+    padding: 100px 100px;
+    border-radius: 10px;
+    border:2px solid rgb(255, 255, 255);
+    background:transparent;
+    backdrop-filter: blur(4rem);
+    
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-  .contact-info h1 {
-      font-size: 2.5rem; /* Adjust heading size for medium screens */
-  }
-
-  .contact-info p, .contact-info li {
-      font-size: 1.1rem; /* Slightly larger text for readability */
-  }
-
-  .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-  }
-}
-
-/* Media query for smaller screens (less than 500px) */
 @media screen and (max-width: 500px) {
-  .contact-info h1 {
-      font-size: 1.8rem; /* Smaller font size for small screens */
-  }
-
-  .contact-info p, .contact-info li {
-      font-size: 1rem; /* Adjust text size */
-  }
-
-  .column {
-      width: 100%; /* Stack columns on small screens */
-      padding: 10px; /* Adjust padding */
-  }
-
-  input[type=submit] {
-      width: 100%; /* Full-width button */
-      padding: 14px 0; /* Adjust padding for the button */
-  }
-}
-
-section .container5 {
-  position: relative;
-  top: 100px;
-  width: 80%; /* Make the container more fluid on smaller screens */
-  height: auto; /* Adjust height dynamically */
-  display: block;
-  padding: 30px;
-  border-radius: 10px;
-  border: 2px solid rgb(255, 255, 255);
-  background: transparent;
-  backdrop-filter: blur(20px);
-}
-
-/* Media query for very small screens */
-@media screen and (max-width: 400px) {
-  section .container5 {
-      padding: 15px; /* Reduce padding for small screens */
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
