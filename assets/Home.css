@@ -253,7 +253,7 @@ nav a:hover {
         width: 95%; /* Reduce width on smaller screens */
         height: 90%;
         padding-bottom: 2rem; /* 64px */
-        top: 2rem; /* 112px */
+        top: 4rem; /* 112px */
     }
     .nextpage {
         margin-top: 2rem;
@@ -263,7 +263,7 @@ nav a:hover {
     }
     header nav {
         height: 4.3rem;
-        margin-left: 4rem;
+        margin-left: 0.5rem;
     }
     header nav a:nth-child(1).active ~ .indicator
     {
