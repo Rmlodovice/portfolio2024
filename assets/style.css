@@ -65,7 +65,7 @@ section .container1 span
     text-align: center;
 }
 .nextpage {
-    background-color: #fff;
+    background-color: #0a8dca67;
     border: none;
     border-radius: 0.625rem; /* 10px */
     padding: 1rem 2rem; /* Adjusted padding for better mobile appearance */

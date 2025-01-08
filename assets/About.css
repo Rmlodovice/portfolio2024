@@ -26,11 +26,11 @@
 
 .des {
     position: fixed;
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
     margin-left: 45%;
-    width: 20rem;
-    margin-top: -50%;
+    width: 23rem;
+    margin-top: -55%;
 }
 
 section .container3 {
@@ -70,42 +70,45 @@ section .container3 {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     .profile_img {
-        width: 20rem; /* 240px */
+        width: 17rem; /* 240px */
         height: 15rem; /* 288px */
         margin-left: 3rem;
     }
 
     .abouttitle h1 {
-        font-size: 1rem; /* 40px */
+        font-size: 1.5rem; /* 40px */
         color: white;
-        margin-left: 20%;
+        margin-left: 5%;
     }
 
     .des {
-        font-size: 5px; /* 16px */
-        padding-right: 15%;
-        width: 80%; /* Make width responsive */
+        position: fixed;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        font-size: 14px; /* 16px */
+        width: 70%; /* Make width responsive */
     }
 
     section .container3 {
         width: 95%; /* Reduce width on smaller screens */
-        height: 90%;
+        height: 95%;
         padding-bottom: 5rem; /* 64px */
         top: 1px; /* 112px */
     }
     .download-btn {
-        margin-top: 105%;
+        margin-top: 90%;
         align-items: center;
+        margin-left: 5rem;
 
     }
 }
 
 /* Media query for very small screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .profile_img {
-        width: 12rem; /* 192px */
+        width: 15rem; /* 192px */
         height: 15rem; /* 240px */
     }
 

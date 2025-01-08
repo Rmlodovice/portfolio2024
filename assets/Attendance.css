@@ -4,27 +4,27 @@
     padding: 1px;
     box-sizing: border-box;
     height: 55rem;
-    width: 100rem;
+    width: 50rem;
     margin-top: 4%;
     border: 2px solid rgb(255, 255, 255);
     
 }
-
-/* Media query for smaller screens */
-@media screen and (max-width: 425) {
+/* Media query for mobile screens */
+@media screen and (max-width: 425px) {
     .excelsheet {
-        width: 1.5%; /* Use percentage to make it fluid */
-        height: 5rem; /* Adjust height for smaller screens */
-        margin-top: 2rem; /* Reduce margin on top */
-        margin-left: 5rem;
+        width: 95%; /* Full width on mobile */
+        height: 50rem; /* Further reduce height */
+        margin-top: 1rem; /* Reduce margin on top */
+        margin-left: 1rem;
     }
 }
-
-/* Media query for mobile screens */
+/* Media query for smaller screens */
 @media screen and (max-width: 320px) {
     .excelsheet {
-        width: 536px; /* Full width on mobile */
-        height: 50rem; /* Further reduce height */
-      
+        width: 25%; /* Use percentage to make it fluid */
+        height: 3rem; /* Adjust height for smaller screens */
+        margin-top: 1rem; /* Reduce margin on top */
+        margin-left: 10rem;
     }
 }
+

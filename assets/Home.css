@@ -50,7 +50,7 @@ header nav {
     max-height: 6.25rem; /* 100px */
     border-radius: 0.625rem; /* 10px */
     filter: drop-shadow(0 0.3125rem 0.3125rem rgba(29, 108, 255, 0.5));
-    background: #fff;
+    background: #ffffff;
     margin-right: 1.875rem; /* 30px */
 }
 
@@ -88,7 +88,7 @@ header nav a:hover .icon {
 
 header nav a.active .icon {
     transform: translateY(-0.9375rem); /* -15px */
-    color: #fff;
+    color: #08efff;
 }
 
 header nav a .text {
@@ -112,7 +112,7 @@ header nav a:hover .text {
 
 header nav a.active .text {
     transform: translateY(1.25rem); /* 20px */
-    color: #fff;
+    color: #ffffff;
     opacity: 1;
 }
 
@@ -241,11 +241,12 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .landingtitle {
+@media screen and (max-width: 425px) {
+    .landingtitle p {
         top: 2rem;
-        font-size: 10px; /* 40px */
+        font-size: 25px; /* 40px */
         margin-left: 9%;
+        
     }
 
     section .container1 {
@@ -260,4 +261,40 @@ nav a:hover {
     p {
         margin-top: 5rem;
     }
+    header nav {
+        height: 4.3rem;
+        margin-left: 4rem;
+    }
+    header nav a:nth-child(1).active ~ .indicator
+    {
+        width: 4.5rem;
+        transform: translateX(calc(0.05px * 1));
+        background-color: #02C6FF;
+    }
+    header nav a:nth-child(2).active ~ .indicator
+    {
+        transform: translateX(calc(55px * 1));
+        background-color: #FF9702;
+    }
+    header nav a:nth-child(3).active ~ .indicator
+    {
+        transform: translateX(calc(52px * 2.04));
+        background-color: #037e94;
+    }
+    header nav a:nth-child(4).active ~ .indicator
+    {
+        width: 60px;
+        transform: translateX(calc(50px * 3));
+        background-color: #d31212c2;
+        
+    }
+    header nav a:nth-child(5).active ~ .indicator
+    {
+        transform: translateX(calc(55px * 3.7));
+        background-color: #5E5E5E;
+    }
+    a {
+        font-size: 12px;
+    }
 }
+
