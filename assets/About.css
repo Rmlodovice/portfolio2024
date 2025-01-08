@@ -3,41 +3,43 @@
 }
 
 .abouttitle {
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: -5rem; /* Adjusted margin for the header */
-    display: flex;
     color: white;
 }
 
 .profile_img {
+    position: relative;
     border-radius: 1rem;
-    width: 20rem; /* 320px */
-    height: 23rem; /* 368px */
-    margin-top: 1rem; /* 16px */
+    width: 20rem; 
+    height: 23rem; 
+    margin-top: 10px; 
 }
 
 .abouttitle h1 {
-    font-size: 3rem; /* 48px */
+    font-size: 2rem;
+    margin-top: 10%;
+
 }
 
 .des {
-    font-size: 1.1rem; /* 17.6px */
+    position: fixed;
+    font-size: 15px;
     text-align: justify;
-    margin-left: 4%;
-    width: 30rem; /* 480px */
-    margin-top: 4.5rem; /* 72px */
+    margin-left: 45%;
+    width: 20rem;
+    margin-top: -50%;
 }
 
 section .container3 {
     position: relative;
-    top: 20%;
-    width: auto;
-    height: 30rem;
+    top: 10%;
+    width: 40%;
+    height: 35rem;
     display: block;
-    padding: 100px 100px;
+    padding: 5px 25px;
     border-radius: 10px;
     border:2px solid rgb(255, 255, 255);
     background:transparent;
@@ -45,15 +47,17 @@ section .container3 {
 }
 
 .download-btn {
+    position: relative;
     display: inline-block ;
-    margin-top: 4rem;
-    padding: 0.75rem 1.5rem;
+    margin-top: 30rem;
+    margin-left: 3rem;
+    padding: 0.55rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
     background-color: #0ad0f3;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -66,27 +70,35 @@ section .container3 {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .profile_img {
-        width: 15rem; /* 240px */
-        height: 18rem; /* 288px */
+        width: 20rem; /* 240px */
+        height: 15rem; /* 288px */
+        margin-left: 3rem;
     }
 
     .abouttitle h1 {
-        font-size: 2.5rem; /* 40px */
+        font-size: 1rem; /* 40px */
+        color: white;
+        margin-left: 20%;
     }
 
     .des {
-        font-size: 1rem; /* 16px */
-        margin-left: 3%;
+        font-size: 5px; /* 16px */
+        padding-right: 15%;
         width: 80%; /* Make width responsive */
-        margin-top: 2.5rem; /* 40px */
     }
 
     section .container3 {
-        width: 80%; /* Reduce width on smaller screens */
-        padding: 4rem; /* 64px */
-        top: 7rem; /* 112px */
+        width: 95%; /* Reduce width on smaller screens */
+        height: 90%;
+        padding-bottom: 5rem; /* 64px */
+        top: 1px; /* 112px */
+    }
+    .download-btn {
+        margin-top: 105%;
+        align-items: center;
+
     }
 }
 

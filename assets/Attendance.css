@@ -1,30 +1,30 @@
 
 .excelsheet {
     position: relative;
-    width: 70rem;
-    padding: 0;
-    margin: auto;
+    padding: 1px;
     box-sizing: border-box;
-    height: 52rem;
-    margin-top: 6rem;
+    height: 55rem;
+    width: 100rem;
+    margin-top: 4%;
     border: 2px solid rgb(255, 255, 255);
     
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425) {
     .excelsheet {
-        width: 70%; /* Use percentage to make it fluid */
-        height: 40rem; /* Adjust height for smaller screens */
+        width: 1.5%; /* Use percentage to make it fluid */
+        height: 5rem; /* Adjust height for smaller screens */
         margin-top: 2rem; /* Reduce margin on top */
+        margin-left: 5rem;
     }
 }
 
 /* Media query for mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
     .excelsheet {
-        width: 534px; /* Full width on mobile */
-        height: 40rem; /* Further reduce height */
+        width: 536px; /* Full width on mobile */
+        height: 50rem; /* Further reduce height */
       
     }
 }

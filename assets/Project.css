@@ -8,12 +8,12 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 5px;
 }
 
 .projecttitle {
     h1 {
-        font-size: 4rem;
+        font-size: 30px;
     }
     h2 {
         color: black;
@@ -21,8 +21,8 @@
         margin-bottom: 8%;
     }
     a {
-        margin-top: 20%;
-        font-size: 3rem;
+        margin-top: 10%;
+        font-size: 25px;
         color: green;
     }
 }
@@ -30,11 +30,11 @@
 section .container2 {
     /* Add styles for Container 2 */
     position: relative;
-    top: 20%;
+    top: 8rem;
     width: auto;
     height: 24rem;
     display: block;
-    padding: 100px 100px;
+    padding: 50px 100px;
     border-radius: 10px;
     border:2px solid rgb(255, 255, 255);
     background:transparent;
