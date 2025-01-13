@@ -21,10 +21,10 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 320px) {
     .excelsheet {
-        width: 25%; /* Use percentage to make it fluid */
-        height: 3rem; /* Adjust height for smaller screens */
+        width: 18rem; /* Use percentage to make it fluid */
+        height: 45rem; /* Adjust height for smaller screens */
         margin-top: 1rem; /* Reduce margin on top */
-        margin-left: 10rem;
+        
     }
 }
 

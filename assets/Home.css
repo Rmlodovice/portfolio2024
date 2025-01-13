@@ -298,3 +298,62 @@ nav a:hover {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .landingtitle p {
+        margin-top: 10rem;
+        font-size: 20px; /* 40px */
+        margin-left: 5%;
+        
+    }
+
+    section .container1 {
+        width: 95%; /* Reduce width on smaller screens */
+        height: 90%;
+        padding-bottom: 2rem; /* 64px */
+        top: 4rem; /* 112px */
+    }
+    .nextpage {
+        margin-top: 2rem;
+    }
+    p {
+        margin-top: 5rem;
+    }
+    header nav {
+        height: 4.3rem;
+        margin-left: 1rem;
+    }
+    header nav a:nth-child(1).active ~ .indicator
+    {
+        width: 2.5rem;
+        transform: translateX(calc(0.05px * 1));
+        background-color: #02C6FF;
+    }
+    header nav a:nth-child(2).active ~ .indicator
+    {
+        width: 50px;
+        transform: translateX(calc(23px * 1));
+        background-color: #FF9702;
+    }
+    header nav a:nth-child(3).active ~ .indicator
+    {
+        width: 45px;
+        transform: translateX(calc(25px * 2.04));
+        background-color: #037e94;
+    }
+    header nav a:nth-child(4).active ~ .indicator
+    {
+        width: 65px;
+        transform: translateX(calc(23px * 3));
+        background-color: #d31212c2;
+        
+    }
+    header nav a:nth-child(5).active ~ .indicator
+    {
+        width: 55px;
+        transform: translateX(calc(27px * 3.7));
+        background-color: #5E5E5E;
+    }
+    a {
+        font-size: 12px;
+    }
+}

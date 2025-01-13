@@ -25,12 +25,12 @@
 }
 
 .des {
-    position: fixed;
+    position: absolute;
+    margin-top: -120%;
     font-size: 18px;
     text-align: justify;
-    margin-left: 45%;
+    margin-left: 110%;
     width: 23rem;
-    margin-top: -55%;
 }
 
 section .container3 {
@@ -86,8 +86,8 @@ section .container3 {
     .des {
         position: fixed;
         margin-left: 8%;
-        margin-top: 3rem;
-        font-size: 14px; /* 16px */
+        margin-top: 3.5rem;
+        font-size: 13px; /* 16px */
         width: 70%; /* Make width responsive */
     }
 
@@ -108,8 +108,9 @@ section .container3 {
 /* Media query for very small screens */
 @media screen and (max-width: 320px) {
     .profile_img {
-        width: 15rem; /* 192px */
-        height: 15rem; /* 240px */
+        width: 12.5rem; /* 192px */
+        height: 12rem; /* 240px */
+        margin-left: 0.11%;
     }
 
     .abouttitle h1 {
@@ -117,20 +118,19 @@ section .container3 {
     }
 
     .des {
-        font-size: 10px; /* 14.4px */
-        margin-left: 2%;
-        width: 90%; /* Full width for smaller screens */
-        margin-top: 2rem; /* 32px */
+        font-size: 11px; /* 14.4px */
+        margin-left: 1%;
+        width: 70%; /* Full width for smaller screens */
+        margin-top: 4rem; /* 32px */
     }
 
     section .container3 {
         width: 90%; /* Full width for smaller screens */
-        padding: 3rem; /* 48px */
-        top: 5rem; /* 80px */
+        padding: 2rem; /* 48px */
+        top: 1.5rem; /* 80px */
     }
     .download-btn {
-        margin-top: 90%;
-        align-items: center;
-        margin-left: 5rem;
+        margin-top: 125%;
+        margin-left: 0;
     }
 }
