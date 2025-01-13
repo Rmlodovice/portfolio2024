@@ -9,6 +9,14 @@
     border: 2px solid rgb(255, 255, 255);
     
 }
+@media screen and (max-width: 768px) {
+    .excelsheet {
+        width: 45rem; /* Full width on mobile */
+        height: 45rem; /* Further reduce height */
+        margin-top: 7rem; /* Reduce margin on top */
+        margin-left: 1rem;
+    }
+}
 /* Media query for mobile screens */
 @media screen and (max-width: 425px) {
     .excelsheet {

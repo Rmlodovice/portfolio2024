@@ -226,6 +226,28 @@ nav a:hover {
     margin-top: -5rem;
 }
 
+@media screen and (max-width: 768px) {
+    .landingtitle p {
+        margin-top: 10rem;
+        font-size: 25px; /* 40px */
+        margin-left: 5%;
+        
+    }
+
+    section .container1 {
+        width: 95%; /* Reduce width on smaller screens */
+        height: 60%;
+        padding-bottom: 2rem; /* 64px */
+        top: 6rem; /* 112px */
+    }
+    .nextpage {
+        margin-top: 2rem;
+    }
+    p {
+        margin-top: 5rem;
+    }
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 20.25rem) { /* 500px */
     header {
@@ -357,3 +379,4 @@ nav a:hover {
         font-size: 12px;
     }
 }
+
