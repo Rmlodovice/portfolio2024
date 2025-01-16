@@ -9,10 +9,29 @@
     border: 2px solid rgb(255, 255, 255);
     
 }
+
+@media screen and (max-width: 1440px) {
+    .excelsheet {
+        width: 87rem; /* Full width on mobile */
+        height: 40rem; /* Further reduce height */
+        margin-top: 7rem; /* Reduce margin on top */
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .excelsheet {
+        width: 45rem; /* Full width on mobile */
+        height: 40rem; /* Further reduce height */
+        margin-top: 7rem; /* Reduce margin on top */
+        margin-left: 1rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .excelsheet {
         width: 45rem; /* Full width on mobile */
-        height: 45rem; /* Further reduce height */
+        height: 40rem; /* Further reduce height */
         margin-top: 7rem; /* Reduce margin on top */
         margin-left: 1rem;
     }
@@ -21,8 +40,8 @@
 @media screen and (max-width: 425px) {
     .excelsheet {
         width: 95%; /* Full width on mobile */
-        height: 50rem; /* Further reduce height */
-        margin-top: 1rem; /* Reduce margin on top */
+        height: 40rem; /* Further reduce height */
+        margin-top: 7rem; /* Reduce margin on top */
         margin-left: 1rem;
     }
 }
@@ -30,8 +49,8 @@
 @media screen and (max-width: 320px) {
     .excelsheet {
         width: 18rem; /* Use percentage to make it fluid */
-        height: 45rem; /* Adjust height for smaller screens */
-        margin-top: 1rem; /* Reduce margin on top */
+        height: 43rem; /* Adjust height for smaller screens */
+        margin-top: 4rem; /* Reduce margin on top */
         
     }
 }

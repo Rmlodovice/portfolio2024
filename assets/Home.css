@@ -273,9 +273,66 @@ nav a:hover {
 
     section .container1 {
         width: 95%; /* Reduce width on smaller screens */
-        height: 90%;
+        height: 85%;
         padding-bottom: 2rem; /* 64px */
-        top: 4rem; /* 112px */
+        top: 6rem; /* 112px */
+    }
+    .nextpage {
+        margin-top: 2rem;
+    }
+    p {
+        margin-top: 5rem;
+    }
+    header nav {
+        height: 4.3rem;
+        margin-left: 0.5rem;
+    }
+    header nav a:nth-child(1).active ~ .indicator
+    {
+        width: 4.5rem;
+        transform: translateX(calc(0.05px * 1));
+        background-color: #02C6FF;
+    }
+    header nav a:nth-child(2).active ~ .indicator
+    {
+        transform: translateX(calc(55px * 1));
+        background-color: #FF9702;
+    }
+    header nav a:nth-child(3).active ~ .indicator
+    {
+        transform: translateX(calc(52px * 2.04));
+        background-color: #037e94;
+    }
+    header nav a:nth-child(4).active ~ .indicator
+    {
+        width: 60px;
+        transform: translateX(calc(50px * 3));
+        background-color: #d31212c2;
+        
+    }
+    header nav a:nth-child(5).active ~ .indicator
+    {
+        transform: translateX(calc(55px * 3.7));
+        background-color: #5E5E5E;
+    }
+    a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .landingtitle p {
+        top: 2rem;
+        font-size: 25px; /* 40px */
+        margin-left: 9%;
+        
+    }
+
+    section .container1 {
+        width: 95%; /* Reduce width on smaller screens */
+        height: 85%;
+        padding-bottom: 2rem; /* 64px */
+        top: 6rem; /* 112px */
     }
     .nextpage {
         margin-top: 2rem;
