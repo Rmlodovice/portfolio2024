@@ -5,10 +5,12 @@
     box-sizing: border-box;
     height: 55rem;
     width: 50rem;
-    margin-top: 4%;
+    margin-top: 6rem;
     border: 2px solid rgb(255, 255, 255);
     
 }
+
+
 
 @media screen and (max-width: 1440px) {
     .excelsheet {
