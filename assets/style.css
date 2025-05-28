@@ -5,7 +5,10 @@ html {
 
 body {
     /* Prevent page from being zoomed */
-    overflow: 2; 
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    
 }
 
 .xtraspace
