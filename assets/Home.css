@@ -44,41 +44,42 @@ header h2 a span {
 
 header nav {
     display: flex;
-    width: 22.5rem; /* 360px */
-    height: 4.375rem; /* 70px */
-    max-width: 25rem; /* 400px */
-    max-height: 6.25rem; /* 100px */
-    border-radius: 0.625rem; /* 10px */
+    width: 24rem;
+    height: 4.375rem;
+    max-width: 50rem;
+    max-height: 6.25rem;
+    border-radius: 0.625rem;
     filter: drop-shadow(0 0.3125rem 0.3125rem rgba(29, 108, 255, 0.5));
     background: #ffffff;
-    margin-right: 1.875rem; /* 30px */
+    margin-right: 4.875rem;
 }
 
 header nav a {
     position: relative;
     list-style: none;
-    width: 4.375rem; /* 70px */
-    height: 4.375rem; /* 70px */
-    max-width: 4.375rem; /* 70px */
-    max-height: 4.375rem; /* 70px */
-    z-index: 2;
+    width: 2.375rem;
+    height: 4.375rem;
+    max-width: 4.375rem;
+    max-height: 4.375rem;
+    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     font-weight: 250;
-    color: #000;
+    color: #14b3db;
 }
+
 
 header nav a .icon {
     position: relative;
     display: block;
-    line-height: 1px;
-    top: 0.3125rem; /* 5px */
-    font-size: 1.5em;
+    line-height: 2px;
+    top: 0.3rem; /* 5px */
+    font-size: 1.8em;
     text-align: center;
-    transition: 0.2s;
+    transition: 0.9s;
 }
 
 header nav a:hover .icon {
@@ -93,12 +94,12 @@ header nav a.active .icon {
 
 header nav a .text {
     position: absolute;
-    color: #fff;
-    padding: 0.125rem 0.4375rem; /* 2px 7px */
+    color: #ce1313;
+    padding: 0.125rem 0.1375rem; /* 2px 7px */
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.7em;
     letter-spacing: 0.05em;
-    transition: 0.2s;
+    transition: 0.7s;
     transform: translateY(1.875rem); /* 30px */
     opacity: 0;
     text-align: center;
@@ -116,12 +117,12 @@ header nav a.active .text {
     opacity: 1;
 }
 
-#landing {
-    color: rgb(0, 0, 0);
-}
+/**#landing {
+    color: rgb(255, 0, 0);
+} **/
 
 .landingtitle p {
-    color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
     margin-bottom: 1.5625rem; /* 25px */
     font-size: 1.875rem; /* 30px */
 }
@@ -131,12 +132,14 @@ header nav a.active .text {
 }
 
 .body {
-    background-image: linear-gradient(105deg, rgba(75, 75, 75), rgba(50, 50, 50), rgba(25, 25, 25));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: linear-gradient(120deg, #1e2a38, #2e3f4f, #3e5462);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f0f0f0;
 }
+
 
 section {
     position: relative;
@@ -189,22 +192,48 @@ header {
 
 section .container1 
 {
-    position: relative;
-    top: 20%;
-    width: 60rem;
-    height: 24rem;
-    display: block;
-    padding: 30px 40px;
-    border-radius: 10px;
-    border:2px solid rgb(255, 255, 255);
-    background:transparent;
-    backdrop-filter: blur(4rem);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 50rem;
+    height: 25rem;
+    margin: 10vh auto;
+    text-align: center;
+    color: #f0f0f0;
+    backdrop-filter: blur(1.5rem);
 }
 
 .logo {
-    font-size: 1.5rem; /* 24px */
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0ad0f3;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #ff9702;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  transform: rotate(8deg);
+}
+
+.logo-text {
+  font-family: 'Vina Sans', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
 
 /* Navigation styles */
 nav {
@@ -223,7 +252,35 @@ nav a:hover {
 }
 
 .landingtitle {
-    margin-top: -5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #0ad0f3;
+}
+
+.container1-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.button-wrapper {
+  margin-top: 2rem;
+}
+
+.nextpage {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0ad0f3;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nextpage:hover {
+  background-color: #ff9702;
 }
 
 @media screen and (max-width: 768px) {
@@ -255,8 +312,35 @@ nav a:hover {
     }
 
     .logo {
-        font-size: 1rem; /* 20px */
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
     }
+
+    .logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0ad0f3;
+    transition: color 0.3s ease;
+    }
+
+    .logo a:hover {
+    color: #ff9702;
+    }
+
+    .logo-icon {
+    font-size: 2rem;
+    transform: rotate(8deg);
+    }
+
+    .logo-text {
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    }
+
 
     nav a {
         margin-left: 0.625rem; /* 10px */
@@ -287,12 +371,7 @@ nav a:hover {
         height: 4.3rem;
         margin-left: 0.5rem;
     }
-    header nav a:nth-child(1).active ~ .indicator
-    {
-        width: 4.5rem;
-        transform: translateX(calc(0.05px * 1));
-        background-color: #02C6FF;
-    }
+   
     header nav a:nth-child(2).active ~ .indicator
     {
         transform: translateX(calc(55px * 1));
@@ -312,7 +391,7 @@ nav a:hover {
     }
     header nav a:nth-child(5).active ~ .indicator
     {
-        transform: translateX(calc(55px * 3.7));
+        transform: translateX(calc(55px * 3.5));
         background-color: #5E5E5E;
     }
     a {
@@ -410,7 +489,7 @@ nav a:hover {
     header nav a:nth-child(2).active ~ .indicator
     {
         width: 50px;
-        transform: translateX(calc(23px * 1));
+        transform: translateX(calc(50px * 1));
         background-color: #FF9702;
     }
     header nav a:nth-child(3).active ~ .indicator
@@ -421,8 +500,8 @@ nav a:hover {
     }
     header nav a:nth-child(4).active ~ .indicator
     {
-        width: 65px;
-        transform: translateX(calc(23px * 3));
+        width: 20px;
+        transform: translateX(calc(50px * 1));
         background-color: #d31212c2;
         
     }

@@ -17,130 +17,212 @@
     </head>
     <body>
         <header>
-            <h2 class="logo">
-                <a href="#landing">
-                    <span>RML</span>
-                </a>
-            </h2>
+            <h1 class="logo">
+            <a href="#landing" aria-label="Back to Home">
+                <span class="logo-icon">☁️</span>
+                <span class="logo-text">RMLodovice</span>
+            </a>
+            </h1>
             <nav>
-                <a href="#landing" style="--clr:#02C6FF;" class="active">
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <span class="text">HOME</span>
-                </a>
-                <a href="#project" style="--clr:#FF9702;">
-                    <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
-                    <span class="text">PROJECTS</span>
-                </a>
-                <a href="#about" style="--clr:#037e94;">
-                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                    <span class="text">ABOUT</span>
-                </a>
-                <a href="#attendance" style="--clr:#ff0303;">
-                    <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
-                    <span class="text">ATTENDANCE</span>
-                </a>
-                <a href="#contact" style="--clr:#5E5E5E;">
-                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                    <span class="text">CONTACT</span>
-                </a>
-                <div class="indicator"></div>
+            <a href="#landing" style="--clr:#02C6FF;" class="active">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">HOME</span>
+            </a>
+            <a href="#project" style="--clr:#FF9702;">
+                <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
+                <span class="text">PROJECTS</span>
+            </a>
+            <a href="#about" style="--clr:#037e94;">
+                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="text">ABOUT</span>
+            </a>
+            <a href="#attendance" style="--clr:#ff0303;">
+                <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                <span class="text">ATTENDANCE</span>
+            </a>
+            <a href="#contact" style="--clr:#5E5E5E;">
+                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                <span class="text">CONTACT</span>
+            </a>
+            <div class="indicator"></div>
             </nav>
         </header>
         <div class="body">
             <section id="landing">
                 <div class="container1 hidden">
+
+                    <!-- Title -->
                     <div class="landingtitle">
-                        <span>
-                            <p>☁️RMLodovice☁️</p>
-                        </span>
+                    <p>☁️RMLodovice☁️</p>
                     </div>
+
+                    <!-- Description -->
                     <div class="container1-content">
-                        <p>
-                            Crafting digital experiences that captivate and innovate – where every pixel tells a story. Elevate your online presence with bespoke designs tailored for impact and functionality. Welcome to a seamless fusion of creativity and technology.
-                        </p>
+                    <p>
+                        Crafting digital experiences that captivate and innovate – where every pixel tells a story.
+                        Elevate your online presence with bespoke designs tailored for impact and functionality.
+                        Welcome to a seamless fusion of creativity and technology.
+                    </p>
                     </div>
-                    <div class="flex">
-                        <div class="xtraspace"></div>
-                        <div class="xtraspace"></div>
-                        <div class="xtraspace"></div>
-                        <div class="xtraspace"></div>
-                        <div class="container1-button">
-                            <a href="#project" class="nextpage">About the project >></a>
-                        </div>
+
+                    <!-- Button and Flex spacing -->
+                    <div class="button-wrapper">
+                    <a href="#project" class="nextpage">About the project >></a>
                     </div>
+
                 </div>
-            </section>
+                </section>
             <section id="project">
-                <div class="container2 hidden">
-                    <div class="projecttitle">
-                        <span>
-                            <h1>✍🏽PROJECT✍🏽</h1>
-                            <h2>This is our project in java👇🏽</h2>
-                            <a href="https://github.com/Rmlodovice/GroupProject">👉🏽click here👈🏽</a>
-                        </span>
+                <div class="project-dashboard container2 hidden">
+                    <h1 class="project-heading">📊 My Projects</h1>
+                    <p class="project-subheading">School and Work Projects I've built along the way:</p>
+
+                    <div class="project-grid">
+                    <!-- Project Card -->
+                    <div class="project-card">
+                        <h2>📚 Student Management System</h2>
+                        <p>A Java GUI-based system that records, edits, and manages student records and grades.</p>
+                        <p class="project-meta">🗓 School Project | Java | Swing</p>
+                        <a href="https://github.com/Rmlodovice/GroupProject" class="project-link" target="_blank">🔗 View on GitHub</a>
+                    </div>
+
+                    <!-- Add More Cards Below -->
+                    <div class="project-card">
+                        <h2>🧾 Responsive Portfolio Website</h2>
+                        <p>This site! A personal portfolio to showcase my web development skills, built with HTML, CSS, and JavaScript.</p>
+                        <p class="project-meta">💼 Personal Project | Frontend</p>
+                        <a href="https://github.com/Rmlodovice/Portfolio" class="project-link" target="_blank">🔗 View on GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>💻 Inventory Management System</h2>
+                        <p>A simple inventory CRUD system using PHP and MySQL, built for our internship company.</p>
+                        <p class="project-meta">🛠 Internship | PHP & SQL</p>
+                        <a href="#" class="project-link" target="_blank">🔗 View Project</a>
+                    </div>
                     </div>
                 </div>
             </section>
             <section id="about">
-                <div class="container3 hidden">
-                    <div class="abouttitle">
-                        <span>
-                            <h1> 👨🏼‍🎓 ABOUT </h1>
-                            <a href="https://www.facebook.com/RMLodovice">
-                                <img class="profile_img" src="pictures/profile.jpg" alt="FACEBOOK">
-                                </a>
-                        </span>
-                            <p class="des">My name is Randell Maire Lodovice, a web developer passionate about creating engaging and intuitive web experiences. With a solid foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I specialize in both front-end and back-end development. I take pride in my ability to collaborate effectively with teams and clients, turning complex ideas into user-friendly web solutions. Always eager to tackle new challenges and stay updated with the latest industry trends, I'm committed to delivering innovative and scalable websites and applications that meet the dynamic needs of users and businesses alike.</p>
+                <div class="about-wrapper">
+
+                    <!-- LEFT: About Section -->
+                    <div class="container3 hidden about-left">
+                    <h1>👨🏼‍🎓 ABOUT</h1>
+                    <a href="https://www.facebook.com/RMLodovice">
+                        <img class="profile_img" src="pictures/profile.jpg" alt="FACEBOOK" />
+                    </a>
+
+                    <p class="des">
+                        My name is Randell Maire Lodovice, a web developer passionate about creating engaging and intuitive web experiences...
+                    </p>
+
+                    <a href="pictures/RandellMaire_Lodovice_Resume.png/resume.jpg" download class="download-btn">
+                        📥 Download Resume
+                    </a>
                     </div>
-                    <span>
-                    <a href="pictures/RandellMaire_Lodovice_Resume.png/resume.jpg" download="pictures/RandellMaire_Lodovice_Resume.png/resume.jpg" class="download-btn">
-                        Download Resume
-                    </a></span>
-                </div>
-            </section>
-            <section id="attendance">
-                <div class="container4 hidden">
-                    <div class="attendancetitle">
-                        <div>
-                            <iframe class="excelsheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true"></iframe>
+
+                    <!-- RIGHT: Certificates & Achievements -->
+                    <div class="side-credentials">
+                <div class="credential-flex">
+
+                    <div class="certificate-section">
+                    <h2>📜 Certificates</h2>
+                    <div class="certificates-grid">
+                        <div class="certificate-item">
+                        <img src="pictures/CSS.png" class="certificate-img" />
+                        <p class="cert-label">NC II - Computer Systems Servicing</p>
                         </div>
-            </section>
+                        <div class="certificate-item">
+                        <img src="pictures/EPAS.png" class="certificate-img" />
+                        <p class="cert-label">NC II - Electronics Assembly</p>
+                        <a href="certificates/RMLodovice_Certificates.zip" class="download-cert-btn" download>
+                            📥 Download Certificates
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="achievement-section">
+                    <h2>🏆 Achievements</h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                        <img src="pictures/CSS.png" class="achievement-img" />
+                        <p class="ach-label">Top Performer – CSS</p>
+                        </div>
+                        <div class="achievement-item">
+                        <img src="pictures/EPAS.png" class="achievement-img" />
+                        <p class="ach-label">Outstanding Award – EPAS</p>
+                        <a href="achievements/RMLodovice_Achievements.zip" class="download-ach-btn" download>
+                            📥 Download Achievements
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+                <section id="attendance">
+                    <div class="container4 hidden">
+                        <!-- Title with glowing animation -->
+                        <div class="attendancetitle glow">
+                        <h2>🧾 Attendance Record</h2>
+                        <p>Daily Attendance Sheet.</p>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="attendance-tabs">
+                        <button class="tab-link active" onclick="switchSheet(0)">Sheet 1</button>
+                        <button class="tab-link" onclick="switchSheet(1)">Sheet 2</button>
+                        </div>
+
+                        <!-- Iframe Content -->
+                        <div class="iframe-wrapper">
+                        <iframe class="excelsheet tab-content" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true"></iframe>
+
+                        <iframe class="excelsheet tab-content" style="display: none;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true"></iframe>
+                        </div>
+                    </div>
+                </section>
             <section id="contact">
                 <div class="container5 hidden">
-                    <div style="text-align:center">
-                      <h2>Contact Us</h2>
-                      <p>Swing by for a cup of coffee, or leave us a message:</p>
+                    <div class="contact-title">
+                    <h2>Contact Us</h2>
+                    <p>Swing by for a cup of coffee, or leave us a message:</p>
                     </div>
-                    <div class="row">
-                      <div class="column">
-                        <img class="contact_img" src="pictures/contact.jpg" style="width:90%">
-                      </div>
-                      <div class="column">
+
+                    <div class="contact-row">
+                    <!-- Left Side - Image -->
+                    <div class="contact-column contact-image">
+                        <img src="pictures/contact.jpg" alt="Contact" />
+                    </div>
+
+                    <!-- Right Side - Form -->
+                    <div class="contact-column contact-form">
                         <form action="https://formspree.io/f/xanygbgr" method="POST">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                            
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                            
-                            <label for="country">Country</label>
-                            <select id="country" name="country" required>
-                              <option value="cebu">Cebu City</option>
-                              <option value="toledo">Toledo City</option>
-                              <option value="mandaue">Mandaue City</option>
-                              <option value="lacion">Consolacion</option>
-                              <option value="llc">Lapu-Lapu City</option>
-                            </select>
-                            
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
-                            
-                            <input type="submit" value="Submit">
-                          </form>
-                      </div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="cebu">Cebu City</option>
+                            <option value="toledo">Toledo City</option>
+                            <option value="mandaue">Mandaue City</option>
+                            <option value="lacion">Consolacion</option>
+                            <option value="llc">Lapu-Lapu City</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+
+                        <input type="submit" value="Submit">
+                        </form>
                     </div>
-                  </div>
-            </section>
+                    </div>
+                </div>
+                </section>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
