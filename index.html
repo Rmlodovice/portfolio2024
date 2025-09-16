@@ -1,230 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>RMLodovice Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/Home.css">
-        <link rel="stylesheet" type="text/css" href="assets/Project.css">
-        <link rel="stylesheet" type="text/css" href="assets/About.css">
-        <link rel="stylesheet" type="text/css" href="assets/Attendance.css">
-        <link rel="stylesheet" type="text/css" href="assets/Contact.css">
-        <link rel="stylesheet" type="text/css" href="assets/Pictures.css">
-        <link rel="icon" type="image/x-icon" href="pictures/icon.png">
-        <script defer src="assets/script.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1 class="logo">
-            <a href="#landing" aria-label="Back to Home">
-                <span class="logo-icon">☁️</span>
-                <span class="logo-text">RMLodovice</span>
-            </a>
-            </h1>
-            <nav>
-            <a href="#landing" style="--clr:#02C6FF;" class="active">
-                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                <span class="text">HOME</span>
-            </a>
-            <a href="#project" style="--clr:#FF9702;">
-                <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
-                <span class="text">PROJECTS</span>
-            </a>
-            <a href="#about" style="--clr:#037e94;">
-                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                <span class="text">ABOUT</span>
-            </a>
-            <a href="#attendance" style="--clr:#ff0303;">
-                <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
-                <span class="text">ATTENDANCE</span>
-            </a>
-            <a href="#contact" style="--clr:#5E5E5E;">
-                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                <span class="text">CONTACT</span>
-            </a>
-            <div class="indicator"></div>
-            </nav>
-        </header>
-        <div class="body">
-            <section id="landing">
-                <div class="container1 hidden">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RMLodovice — Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="pictures/icon.png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <a class="logo" href="#landing" aria-label="RMLodovice home">
+        <span class="logo-icon">☁️</span>
+        <span class="logo-text">RMLodovice</span>
+      </a>
 
-                    <!-- Title -->
-                    <div class="landingtitle">
-                    <p>☁️RMLodovice☁️</p>
-                    </div>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#landing" class="nav-link">Home</a>
+        <a href="#project" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#attendance" class="nav-link">Attendance</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
 
-                    <!-- Description -->
-                    <div class="container1-content">
-                    <p>
-                        Crafting digital experiences that captivate and innovate – where every pixel tells a story.
-                        Elevate your online presence with bespoke designs tailored for impact and functionality.
-                        Welcome to a seamless fusion of creativity and technology.
-                    </p>
-                    </div>
-
-                    <!-- Button and Flex spacing -->
-                    <div class="button-wrapper">
-                    <a href="#project" class="nextpage">About the project >></a>
-                    </div>
-
-                </div>
-                </section>
-            <section id="project">
-                <div class="project-dashboard container2 hidden">
-                    <h1 class="project-heading">📊 My Projects</h1>
-                    <p class="project-subheading">School and Work Projects I've built along the way:</p>
-
-                    <div class="project-grid">
-                    <!-- Project Card -->
-                    <div class="project-card">
-                        <h2>📚 Student Management System</h2>
-                        <p>A Java GUI-based system that records, edits, and manages student records and grades.</p>
-                        <p class="project-meta">🗓 School Project | Java | Swing</p>
-                        <a href="https://github.com/Rmlodovice/GroupProject" class="project-link" target="_blank">🔗 View on GitHub</a>
-                    </div>
-
-                    <!-- Add More Cards Below -->
-                    <div class="project-card">
-                        <h2>🧾 Responsive Portfolio Website</h2>
-                        <p>This site! A personal portfolio to showcase my web development skills, built with HTML, CSS, and JavaScript.</p>
-                        <p class="project-meta">💼 Personal Project | Frontend</p>
-                        <a href="https://github.com/Rmlodovice/Portfolio" class="project-link" target="_blank">🔗 View on GitHub</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h2>💻 Inventory Management System</h2>
-                        <p>A simple inventory CRUD system using PHP and MySQL, built for our internship company.</p>
-                        <p class="project-meta">🛠 Internship | PHP & SQL</p>
-                        <a href="#" class="project-link" target="_blank">🔗 View Project</a>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="about-wrapper">
-
-                    <!-- LEFT: About Section -->
-                    <div class="container3 hidden about-left">
-                    <h1>👨🏼‍🎓 ABOUT</h1>
-                    <a href="https://www.facebook.com/RMLodovice">
-                        <img class="profile_img" src="pictures/profile.jpg" alt="FACEBOOK" />
-                    </a>
-
-                    <p class="des">
-                        My name is Randell Maire Lodovice, a web developer passionate about creating engaging and intuitive web experiences...
-                    </p>
-
-                    <a href="pictures/RandellMaire_Lodovice_Resume.png/resume.jpg" download class="download-btn">
-                        📥 Download Resume
-                    </a>
-                    </div>
-
-                    <!-- RIGHT: Certificates & Achievements -->
-                    <div class="side-credentials">
-                <div class="credential-flex">
-
-                    <div class="certificate-section">
-                    <h2>📜 Certificates</h2>
-                    <div class="certificates-grid">
-                        <div class="certificate-item">
-                        <img src="pictures/CSS.png" class="certificate-img" />
-                        <p class="cert-label">NC II - Computer Systems Servicing</p>
-                        </div>
-                        <div class="certificate-item">
-                        <img src="pictures/EPAS.png" class="certificate-img" />
-                        <p class="cert-label">NC II - Electronics Assembly</p>
-                        <a href="certificates/RMLodovice_Certificates.zip" class="download-cert-btn" download>
-                            📥 Download Certificates
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="achievement-section">
-                    <h2>🏆 Achievements</h2>
-                    <div class="achievements-grid">
-                        <div class="achievement-item">
-                        <img src="pictures/CSS.png" class="achievement-img" />
-                        <p class="ach-label">Top Performer – CSS</p>
-                        </div>
-                        <div class="achievement-item">
-                        <img src="pictures/EPAS.png" class="achievement-img" />
-                        <p class="ach-label">Outstanding Award – EPAS</p>
-                        <a href="achievements/RMLodovice_Achievements.zip" class="download-ach-btn" download>
-                            📥 Download Achievements
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                </section>
-                <section id="attendance">
-                    <div class="container4 hidden">
-                        <!-- Title with glowing animation -->
-                        <div class="attendancetitle glow">
-                        <h2>🧾 Attendance Record</h2>
-                        <p>Daily Attendance Sheet.</p>
-                        </div>
-
-                        <!-- Tabs -->
-                        <div class="attendance-tabs">
-                        <button class="tab-link active" onclick="switchSheet(0)">Sheet 1</button>
-                        <button class="tab-link" onclick="switchSheet(1)">Sheet 2</button>
-                        </div>
-
-                        <!-- Iframe Content -->
-                        <div class="iframe-wrapper">
-                        <iframe class="excelsheet tab-content" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true"></iframe>
-
-                        <iframe class="excelsheet tab-content" style="display: none;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true"></iframe>
-                        </div>
-                    </div>
-                </section>
-            <section id="contact">
-                <div class="container5 hidden">
-                    <div class="contact-title">
-                    <h2>Contact Us</h2>
-                    <p>Swing by for a cup of coffee, or leave us a message:</p>
-                    </div>
-
-                    <div class="contact-row">
-                    <!-- Left Side - Image -->
-                    <div class="contact-column contact-image">
-                        <img src="pictures/contact.jpg" alt="Contact" />
-                    </div>
-
-                    <!-- Right Side - Form -->
-                    <div class="contact-column contact-form">
-                        <form action="https://formspree.io/f/xanygbgr" method="POST">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-
-                        <label for="country">Country</label>
-                        <select id="country" name="country" required>
-                            <option value="cebu">Cebu City</option>
-                            <option value="toledo">Toledo City</option>
-                            <option value="mandaue">Mandaue City</option>
-                            <option value="lacion">Consolacion</option>
-                            <option value="llc">Lapu-Lapu City</option>
-                        </select>
-
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
-
-                        <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                    </div>
-                </div>
-                </section>
+  <main>
+    <!-- LANDING -->
+    <section id="landing" class="section landing">
+      <div class="wrap landing-inner">
+        <div class="intro">
+          <h1>RMLodovice</h1>
+          <p class="lead">Crafting digital experiences that captivate and innovate — where every pixel tells a story.</p>
+          <a class="btn" href="#project">See Projects →</a>
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+        <div class="hero-image" aria-hidden="true">
+          <!--<img src="pictures/profile.jpg" alt="Profile image" /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="project" class="section projects">
+      <div class="wrap">
+        <h2>📊 My Projects</h2>
+        <p class="muted">School and work projects I've built along the way</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>📚 Student Management System</h3>
+            <p>A Java GUI-based system that records, edits, and manages student records and grades.</p>
+            <p class="meta">School Project • Java • Swing</p>
+            <a class="link" href="https://github.com/Rmlodovice/GroupProject" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>🧾 Responsive Portfolio Website</h3>
+            <p>This site! A personal portfolio to showcase my web development skills, built with HTML, CSS & JavaScript.</p>
+            <p class="meta">Personal Project • Frontend</p>
+            <a class="link" href="https://github.com/Rmlodovice/Portfolio" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <h3>💻 Inventory Management System</h3>
+            <p>A simple inventory CRUD system using PHP and MySQL, made for our internship company.</p>
+            <p class="meta">Internship • PHP & SQL</p>
+            <a class="link" href="#" target="_blank" rel="noopener">View Project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="wrap about-grid">
+        <div class="about-bio">
+          <h2>👨🏼‍🎓 About</h2>
+          <img class="profile" src="pictures/profile.jpg" alt="Randell Maire Lodovice" />
+          <p>Hi — I'm <strong>Randell Maire Lodovice</strong>, a web developer passionate about creating engaging and intuitive web experiences. I enjoy solving problems with clean code and thoughtful design.</p>
+          <a class="btn" href="pictures/Resumee.docx" download>📥 Download Resume</a>
+        </div>
+
+        <aside class="about-side">
+          <div class="card">
+            <h3>📜 Certificates</h3>
+            <div class="grid-sm">
+              <figure>
+                <img src="pictures/CSS.png" alt="CSS certificate" />
+                <figcaption>NC II - Computer Systems Servicing</figcaption>
+              </figure>
+              <figure>
+                <img src="pictures/EPAS.png" alt="EPAS certificate" />
+                <figcaption>NC II - Electronics Assembly</figcaption>
+              </figure>
+            </div>
+            <a class="small-link" href="certificates/RMLodovice_Certificates.zip" download>📥 Download Certificates</a>
+          </div>
+
+          <div class="card">
+            <h3>🏆 Achievements</h3>
+            <div class="grid-sm">
+              <figure>
+                <img src="pictures/CSS.png" alt="achievement" />
+                <figcaption>Top Performer – CSS</figcaption>
+              </figure>
+              <figure>
+                <img src="pictures/EPAS.png" alt="achievement" />
+                <figcaption>Outstanding Award – EPAS</figcaption>
+              </figure> 
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ATTENDANCE -->
+    <section id="attendance" class="section attendance">
+      <div class="wrap">
+        <h2>🧾 Attendance Record</h2>
+        <p class="muted">Daily attendance sheet — switch between sheets below</p>
+
+        <div class="tabs" role="tablist" aria-label="Attendance sheets">
+          <button class="tab active" data-target="sheet-1" role="tab" aria-selected="true">Sheet 1</button>
+          <button class="tab" data-target="sheet-2" role="tab" aria-selected="false">Sheet 2</button>
+        </div>
+
+        <div class="iframe-wrap">
+          <iframe id="sheet-1" class="sheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true" loading="lazy" title="Attendance sheet 1"></iframe>
+          <iframe id="sheet-2" class="sheet hidden" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true" loading="lazy" title="Attendance sheet 2"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div class="contact-card">
+          <h2>Contact</h2>
+          <p class="muted">Swing by for a cup of coffee, or leave a message</p>
+          <form action="https://formspree.io/f/xanygbgr" method="POST" class="contact-form">
+            <div class="form-row">
+              <input name="firstname" id="fname" placeholder="First name" required />
+              <input name="lastname" id="lname" placeholder="Last name" required />
+            </div>
+            <select name="country" id="country" required>
+              <option value="">Select city</option>
+              <option value="cebu">Cebu City</option>
+              <option value="toledo">Toledo City</option>
+              <option value="mandaue">Mandaue City</option>
+              <option value="consolacion">Consolacion</option>
+              <option value="lapu">Lapu-Lapu City</option>
+            </select>
+            <textarea name="subject" id="subject" placeholder="Write something..." required></textarea>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact-image" aria-hidden="true">
+          <img src="pictures/contact.jpg" alt="Contact illustration" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> RMLodovice. Built with ❤️.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small interaction script: nav toggle, tab switcher, year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', ()=>{
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    // tabs
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(t=> t.addEventListener('click', ()=>{
+      tabs.forEach(x=> { x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
+      t.classList.add('active'); t.setAttribute('aria-selected','true');
+      const target = t.getAttribute('data-target');
+      document.querySelectorAll('.sheet').forEach(s=> s.classList.add('hidden'));
+      document.getElementById(target).classList.remove('hidden');
+    }));
+
+    // Smooth scrolling for nav links
+    document.querySelectorAll('.nav-link').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        if (a.hash) { e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+</body>
 </html>
