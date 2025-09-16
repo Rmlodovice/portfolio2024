@@ -163,20 +163,19 @@ body{
 /* ABOUT */
 .about-grid{
   display:grid;
-  grid-template-rows:10fr 120vh;
+  grid-template-rows:10fr 170vh;
   gap:58px;
   align-items:start;
 }
 .about-bio .profile{
-  width:440px;
-  height:440px;
+  width:340px;
+  height:340px;
   border-radius:12px;
   object-fit:cover;
   margin:40px 0;
   border:4px solid rgba(255,255,255,0.03);
-  margin-left: 25rem;
 }
-
+/*
 .about-bio p {
   text-align: justify;
   text-align: center;
@@ -185,13 +184,14 @@ body{
 
 }
 
-.btn1 {
-  margin-left: 33rem;
-}
-
 .about-bio h2 {
   text-align: center;
   font-size: 3rem;
+}
+*/
+
+.btn1 {
+  margin-top: 10px;
 }
 
 .card{
