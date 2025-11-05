@@ -88,57 +88,118 @@
 
       <!-- ABOUT -->
       <section id="about" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-          <div class="space-y-4">
-            <h2 class="text-3xl font-bold">👨🏼‍🎓 About</h2>
-            <img src="pictures/profile.jpg" alt="Randell Maire Lodovice" class="w-36 h-36 rounded-xl object-cover border-4 border-white/10">
-            <p>Hi — I'm <strong>Randell Maire Lodovice</strong>, a web developer passionate about creating engaging and intuitive web experiences. I enjoy solving problems with clean code and thoughtful design.</p>
-            <a href="pictures/Resumee.docx" download class="inline-block bg-accent text-[#02253a] px-5 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">📥 Download Resume</a>
-          </div>
-          <div class="space-y-6">
-            <div class="bg-white/5 p-5 rounded-xl">
-              <h3 class="text-xl font-semibold mb-3">📜 Certificates</h3>
-              <div class="grid grid-cols-2 gap-3">
-                <figure class="text-center">
-                  <img src="pictures/CSS.png" class="rounded-lg w-full" alt="CSS certificate">
-                  <figcaption class="text-sm mt-2 text-muted">NC II - Computer Systems Servicing</figcaption>
-                </figure>
-                <figure class="text-center">
-                  <img src="pictures/EPAS.png" class="rounded-lg w-full" alt="EPAS certificate">
-                  <figcaption class="text-sm mt-2 text-muted">NC II - Electronics Assembly</figcaption>
-                </figure>
-              </div>
-              <a href="certificates/RMLodovice_Certificates.zip" download class="text-sm text-muted hover:text-accent mt-2 inline-block">📥 Download Certificates</a>
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-10 text-center">👨🏼‍🎓 About</h2>
+
+          <!-- Responsive Grid -->
+          <div class="grid md:grid-cols-2 gap-10 items-start">
+            <!-- LEFT SIDE -->
+            <div class="space-y-6 text-center md:text-left">
+              <img src="pictures/profile.jpg" alt="Randell Maire Lodovice" class="w-36 h-36 mx-auto md:mx-0 rounded-xl object-cover border-4 border-white/10">
+              <p>
+                Hi — I'm <strong>Randell Maire Lodovice</strong>, a web developer passionate about creating engaging and intuitive web experiences. 
+                I enjoy solving problems with clean code and thoughtful design.
+              </p>
+              <a href="pictures/Resumee.docx" download 
+                class="inline-block bg-accent text-[#02253a] px-5 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                📥 Download Resume
+              </a>
             </div>
 
-            <div class="bg-white/5 p-5 rounded-xl">
-              <h3 class="text-xl font-semibold mb-3">🏆 Achievements</h3>
-              <div class="grid grid-cols-2 gap-3">
-                <figure class="text-center">
-                  <img src="pictures/CSS.png" class="rounded-lg w-full" alt="achievement">
-                  <figcaption class="text-sm mt-2 text-muted">Top Performer – CSS</figcaption>
-                </figure>
-                <figure class="text-center">
-                  <img src="pictures/EPAS.png" class="rounded-lg w-full" alt="achievement">
-                  <figcaption class="text-sm mt-2 text-muted">Outstanding Award – EPAS</figcaption>
-                </figure>
+            <!-- RIGHT SIDE -->
+            <div class="grid sm:grid-cols-2 gap-6">
+              <!-- Certificates -->
+              <div class="bg-white/5 p-5 rounded-xl sm:col-span-2">
+                <h3 class="text-xl font-semibold mb-3">📜 Certificates</h3>
+                <div class="grid grid-cols-2 gap-3">
+                  <figure class="text-center">
+                    <img src="pictures/CSS.png" class="rounded-lg w-full" alt="CSS certificate">
+                    <figcaption class="text-sm mt-2 text-muted">NC II - Computer Systems Servicing</figcaption>
+                  </figure>
+                  <figure class="text-center">
+                    <img src="pictures/EPAS.png" class="rounded-lg w-full" alt="EPAS certificate">
+                    <figcaption class="text-sm mt-2 text-muted">NC II - Electronics Assembly</figcaption>
+                  </figure>
+                </div>
+                <a href="certificates/RMLodovice_Certificates.zip" 
+                  download class="text-sm text-muted hover:text-accent mt-2 inline-block">
+                  📥 Download Certificates
+                </a>
+              </div>
+
+              <!-- 💻 Skills & Tools -->
+              <div class="bg-white/5 p-5 rounded-xl">
+                <h3 class="text-xl font-semibold mb-3">💻 Skills & Tools</h3>
+                <ul class="list-disc list-inside space-y-1 text-muted">
+                  <li><strong>Java</strong> — OOP, GUI apps (Swing)</li>
+                  <li><strong>PHP & MySQL</strong> — CRUD apps, backend systems</li>
+                  <li><strong>HTML, CSS, JavaScript</strong> — Responsive web design</li>
+                  <li><strong>Git & GitHub</strong> — Version control</li>
+                  <li><strong>VS Code, IntelliJ IDEA, NetBeans</strong></li>
+                </ul>
+              </div>
+
+              <!-- 🎨 Creative Works -->
+              <div class="bg-white/5 p-5 rounded-xl">
+                <h3 class="text-xl font-semibold mb-3">🎨 Creative Works</h3>
+                <p class="text-muted mb-2">
+                  I also take commissions for <strong>portraits</strong>, sell my <strong>artworks</strong>, 
+                  and design <strong>graphics</strong> for clients.
+                </p>
+                <a href="pictures/art_portfolio.zip" download 
+                  class="text-sm text-muted hover:text-accent inline-block mt-2">
+                  📥 Download Art Portfolio
+                </a>
+              </div>
+              <!-- 🏆 Achievements -->
+              <div class="bg-white/5 p-5 rounded-xl sm:col-span-2">
+                <h3 class="text-xl font-semibold mb-3">🏆 Achievements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <figure class="text-center">
+                    <img src="pictures/CCNA.png" class="rounded-lg w-full" alt="CCNA Achievement">
+                    <figcaption class="text-sm mt-2 text-muted font-semibold">
+                      CCNA: Enterprise Networking, Security, and Automation Certified
+                    </figcaption>
+                    <p class="text-xs mt-1 text-muted">
+                      SKILLS: Virtualization, WAN, Dynamic Routing, Network Automation Basics, and QoS.
+                    </p>
+                  </figure>
+                  <figure class="text-center">
+                    <img src="pictures/CCNA2.png" class="rounded-lg w-full" alt="CCNA2 Achievement">
+                    <figcaption class="text-sm mt-2 text-muted font-semibold">
+                      CCNA: Switching, Routing, and Wireless Essentials Certified
+                    </figcaption>
+                    <p class="text-xs mt-1 text-muted">
+                      SKILLS: Access Connectivity, Access Security, Redundancy, IP services, Routing, and Switching Protocols.
+                    </p>
+                  </figure>
+                </div>
+              </div>
+              
+              <!-- 🌟 Hobbies & Interests -->
+              <div class="bg-white/5 p-5 rounded-xl">
+                <h3 class="text-xl font-semibold mb-3">🌟 Hobbies & Interests</h3>
+                <ul class="list-disc list-inside space-y-1 text-muted">
+                  <li>Exploring new web frameworks</li>
+                  <li>Sketching & digital art</li>
+                  <li>Gaming</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+
       <!-- ATTENDANCE -->
       <section id="attendance" class="py-20 px-6 bg-bgdark/40">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl font-bold mb-2">🧾 Attendance Record</h2>
           <p class="text-muted mb-6">Daily attendance sheet — switch between sheets below</p>
-
           <div class="flex flex-wrap gap-3 mb-6">
             <button class="tab-btn bg-accent text-[#02253a] font-semibold px-4 py-2 rounded-lg" data-target="sheet1">Sheet 1</button>
             <button class="tab-btn bg-transparent text-muted border border-white/10 px-4 py-2 rounded-lg" data-target="sheet2">Sheet 2</button>
           </div>
-
           <div class="w-full h-[60vh] rounded-xl overflow-hidden border border-white/10">
             <iframe id="sheet1" class="w-full h-full" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true"></iframe>
             <iframe id="sheet2" class="hidden w-full h-full" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true"></iframe>
@@ -174,6 +235,18 @@
           </div>
         </div>
       </section>
+
+      <!-- SOCIAL LINKS -->
+      <section id="social" class="py-16 bg-bgdark/50 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-accent">🌐 Connect with Me</h2>
+        <div class="flex justify-center gap-8 text-2xl">
+          <a href="https://github.com/Rmlodovice" target="_blank" class="hover:text-accent transition-transform hover:scale-110">🐙 GitHub</a>
+          <a href="https://linkedin.com/in/rmlodovice" target="_blank" class="hover:text-accent transition-transform hover:scale-110">💼 LinkedIn</a>
+          <a href="https://facebook.com" target="_blank" class="hover:text-accent transition-transform hover:scale-110">📘 Facebook</a>
+          <a href="https://instagram.com" target="_blank" class="hover:text-accent transition-transform hover:scale-110">📸 Instagram</a>
+        </div>
+      </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -183,32 +256,23 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-
       const menuBtn = document.getElementById('menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
       const tabs = document.querySelectorAll('.tab-btn');
       const sheets = { sheet1: document.getElementById('sheet1'), sheet2: document.getElementById('sheet2') };
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          tabs.forEach(t => t.classList.remove('bg-accent', 'text-[#02253a]'));
-          tabs.forEach(t => t.classList.add('bg-transparent', 'text-muted'));
-          tab.classList.remove('bg-transparent', 'text-muted');
-          tab.classList.add('bg-accent', 'text-[#02253a]');
-          Object.values(sheets).forEach(s => s.classList.add('hidden'));
-          sheets[tab.dataset.target].classList.remove('hidden');
-        });
-      });
+      tabs.forEach(tab => tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('bg-accent', 'text-[#02253a]'));
+        tabs.forEach(t => t.classList.add('bg-transparent', 'text-muted'));
+        tab.classList.remove('bg-transparent', 'text-muted');
+        tab.classList.add('bg-accent', 'text-[#02253a]');
+        Object.values(sheets).forEach(s => s.classList.add('hidden'));
+        sheets[tab.dataset.target].classList.remove('hidden');
+      }));
     </script>
 
     <style>
-      @keyframes fade-in {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
+      @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
       .animate-fade-in { animation: fade-in 1s ease-out; }
       .animate-fade-in-up { animation: fade-in 1.2s ease-out; }
     </style>
