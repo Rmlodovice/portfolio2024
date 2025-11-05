@@ -1,230 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RMLodovice — Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="pictures/icon.png">
-  <link rel="stylesheet" href="assets/style.css" />
-  <script defer src="assets/script.js"></script>
-</head>
-<body>
-  <header class="site-header" id="top">
-    <div class="wrap">
-      <a class="logo" href="#landing" aria-label="RMLodovice home">
-        <span class="logo-icon">☁️</span>
-        <span class="logo-text">RMLodovice</span>
-      </a>
-
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <a href="#landing" class="nav-link">Home</a>
-        <a href="#project" class="nav-link">Projects</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#attendance" class="nav-link">Attendance</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- LANDING -->
-    <section id="landing" class="section landing">
-      <div class="wrap landing-inner">
-        <div class="intro">
-          <h1>RMLodovice</h1>
-          <p class="lead">Crafting digital experiences that captivate and innovate — where every pixel tells a story.</p>
-          <a class="btn" href="#project">See Projects →</a>
-        </div>
-        <div class="hero-image" aria-hidden="true">
-          <!--<img src="pictures/profile.jpg" alt="Profile image" /> -->
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMLodovice — Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="pictures/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: '#02C6FF',
+              accent2: '#FF9702',
+              bgdark: '#071026',
+              muted: '#BFC8D6',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-b from-bgdark to-[#041021] text-gray-100 font-sans">
+    <!-- HEADER -->
+    <header class="sticky top-0 bg-bgdark/60 backdrop-blur-md z-50 border-b border-white/10">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <a href="#landing" class="flex items-center gap-2 text-accent font-semibold text-lg">
+          <span class="text-2xl">☁️</span> RMLodovice
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="#landing" class="hover:text-accent transition">Home</a>
+          <a href="#project" class="hover:text-accent transition">Projects</a>
+          <a href="#about" class="hover:text-accent transition">About</a>
+          <a href="#attendance" class="hover:text-accent transition">Attendance</a>
+          <a href="#contact" class="hover:text-accent transition">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-accent text-2xl">☰</button>
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="project" class="section projects">
-      <div class="wrap">
-        <h2>📊 My Projects</h2>
-        <p class="muted">School and work projects I've built along the way</p>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>📚 Student Management System</h3>
-            <p>A Java GUI-based system that records, edits, and manages student records and grades.</p>
-            <p class="meta">School Project • Java • Swing</p>
-            <a class="link" href="https://github.com/Rmlodovice/GroupProject" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
-
-          <article class="project-card">
-            <h3>🧾 Responsive Portfolio Website</h3>
-            <p>This site! A personal portfolio to showcase my web development skills, built with HTML, CSS & JavaScript.</p>
-            <p class="meta">Personal Project • Frontend</p>
-            <a class="link" href="https://github.com/Rmlodovice/portfolio2024" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
-          <article class="project-card">
-            <h3>💻 Inventory Management System</h3>
-            <p>A simple inventory CRUD system using PHP and MySQL, made for our internship company.</p>
-            <p class="meta">Internship • PHP & SQL</p>
-            <a class="link" href="https://github.com/Rmlodovice/GroupProject" target="_blank" rel="noopener">View Project</a>
-          </article>
-        </div>
+      <div id="mobile-menu" class="hidden flex-col md:hidden bg-bgdark/95 border-t border-white/10">
+        <a href="#landing" class="px-6 py-3 hover:bg-accent/10">Home</a>
+        <a href="#project" class="px-6 py-3 hover:bg-accent/10">Projects</a>
+        <a href="#about" class="px-6 py-3 hover:bg-accent/10">About</a>
+        <a href="#attendance" class="px-6 py-3 hover:bg-accent/10">Attendance</a>
+        <a href="#contact" class="px-6 py-3 hover:bg-accent/10">Contact</a>
       </div>
-    </section>
+    </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="wrap about-grid">
-        <div class="about-bio">
-          <h2>👨🏼‍🎓 About</h2>
-          <img class="profile" src="pictures/profile.jpg" alt="Randell Maire Lodovice" />
-          <p>Hi — I'm <strong>Randell Maire Lodovice</strong>, a web developer passionate about creating engaging and intuitive web experiences. I enjoy solving problems with clean code and thoughtful design.</p>
-          <a class="btn1" href="pictures/Resume/LODOVICE, RANDELL MAIRE.pdf" download>📥 Download Resume</a>
-        </div>
+    <main>
+      <!-- LANDING -->
+      <section id="landing" class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20">
+        <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 animate-fade-in">RMLodovice</h1>
+        <p class="max-w-xl text-muted mb-6 animate-fade-in-up">
+          Crafting digital experiences that captivate and innovate — where every pixel tells a story.
+        </p>
+        <a href="#project" class="bg-accent text-[#02253a] px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform">See Projects →</a>
+      </section>
 
-        <aside class="about-side">
-          <div class="card">
-            <h3>📜 Certificates</h3>
-            <div class="grid-sm">
-              <figure>
-                <img src="pictures/CSS.png" alt="CSS certificate" />
-                <figcaption>NC II - Computer Systems Servicing</figcaption>
-              </figure>
-              <figure>
-                <img src="pictures/EPAS.png" alt="EPAS certificate" />
-                <figcaption>NC II - Electronics Assembly</figcaption>
-              </figure>
+      <!-- PROJECTS -->
+      <section id="project" class="py-20 px-6 bg-bgdark/40">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-2">📊 My Projects</h2>
+          <p class="text-muted mb-8">School and work projects I've built along the way</p>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white/5 p-6 rounded-xl hover:scale-[1.02] transition-transform">
+              <h3 class="text-xl font-semibold mb-2">📚 Student Management System</h3>
+              <p class="text-muted mb-3">A Java GUI-based system that records, edits, and manages student records and grades.</p>
+              <p class="text-sm text-muted mb-3">School Project • Java • Swing</p>
+              <a href="https://github.com/Rmlodovice/GroupProject" target="_blank" class="text-accent font-semibold hover:underline">View on GitHub</a>
             </div>
-            <a class="small-link" href="certificates/RMLodovice_Certificates.zip" download>📥 Download Certificates</a>
-          </div>
-            <div class="card">
-            <h3>💻 Skills & Tools</h3>
-            <ul class="skills-list">
-              <li><strong>Java</strong> — OOP, GUI apps (Swing)</li>
-              <li><strong>PHP & MySQL</strong> — CRUD apps, backend systems</li>
-              <li><strong>HTML, CSS, JavaScript</strong> — Responsive web design</li>
-              <li><strong>Git & GitHub</strong> — Version control</li>
-              <li><strong>VS Code, IntelliJ IDEA, NetBeans</strong></li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>🎨 Creative Works</h3>
-            <p>I also take commissions for <strong>portraits</strong>, sell my <strong>artworks</strong>, and design <strong>graphics</strong> for clients.</p>
-            <a class="small-link" href="pictures/art_portfolio.zip" download>📥 Download Art Portfolio</a>
-          </div>
-          <div class="card">
-            <h3>🌟 Hobbies & Interests</h3>
-            <ul class="skills-list">
-              <li>Exploring new web frameworks</li>
-              <li>Sketching & digital art</li>
-              <li>Gaming</li>
-            </ul>
-          </div>
 
-          <div class="card">
-            <h3>🏆 Achievements</h3>
-            <div class="grid-sm">
-              <figure>
-                <img src="pictures/CCNA.png" alt="achievement" />
-                <figcaption>CCNA: Enterprise Networking, Security, and Automation Certified</figcaption>
-                  <p>SKILLS: Virtualization, Wide Area Networks, Dynamic Routing, Network Automation Basics, and Quality Of Service(QoS)</p>
-              </figure>
-              <figure>
-                <img src="pictures/CCNA2.png" alt="achievement" />
-                <figcaption>CCNA: Switching, Routing, and Wireless Essentials Certified </figcaption>
-                <p>SKILLS: Access Connectivity, Access Security, First-hop Redundancy, High Availability, IP services, Routing, and Switching Protocols</p>
-              </figure> 
+            <div class="bg-white/5 p-6 rounded-xl hover:scale-[1.02] transition-transform">
+              <h3 class="text-xl font-semibold mb-2">🧾 Responsive Portfolio Website</h3>
+              <p class="text-muted mb-3">This site! A personal portfolio to showcase my web development skills, built with HTML, CSS & JavaScript.</p>
+              <p class="text-sm text-muted mb-3">Personal Project • Frontend</p>
+              <a href="https://github.com/Rmlodovice/Portfolio" target="_blank" class="text-accent font-semibold hover:underline">View on GitHub</a>
+            </div>
+
+            <div class="bg-white/5 p-6 rounded-xl hover:scale-[1.02] transition-transform">
+              <h3 class="text-xl font-semibold mb-2">💻 Inventory Management System</h3>
+              <p class="text-muted mb-3">A simple inventory CRUD system using PHP and MySQL, made for our internship company.</p>
+              <p class="text-sm text-muted mb-3">Internship • PHP & SQL</p>
+              <a href="#" target="_blank" class="text-accent font-semibold hover:underline">View Project</a>
             </div>
           </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ATTENDANCE -->
-    <section id="attendance" class="section attendance">
-      <div class="wrap">
-        <h2>🧾 Attendance Record</h2>
-        <p class="muted">Daily attendance sheet — switch between sheets below</p>
-
-        <div class="tabs" role="tablist" aria-label="Attendance sheets">
-          <button class="tab active" data-target="sheet-1" role="tab" aria-selected="true">Sheet 1</button>
-          <button class="tab" data-target="sheet-2" role="tab" aria-selected="false">Sheet 2</button>
         </div>
+      </section>
 
-        <div class="iframe-wrap">
-          <iframe id="sheet-1" class="sheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true" loading="lazy" title="Attendance sheet 1"></iframe>
-          <iframe id="sheet-2" class="sheet hidden" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true" loading="lazy" title="Attendance sheet 2"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="wrap contact-grid">
-        <div class="contact-card">
-          <h2>Contact</h2>
-          <p class="muted">Swing by for a cup of coffee, or leave a message</p>
-          <form action="https://formspree.io/f/xanygbgr" method="POST" class="contact-form">
-            <div class="form-row">
-              <input name="firstname" id="fname" placeholder="First name" required />
-              <input name="lastname" id="lname" placeholder="Last name" required />
+      <!-- ABOUT -->
+      <section id="about" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">👨🏼‍🎓 About</h2>
+            <img src="pictures/profile.jpg" alt="Randell Maire Lodovice" class="w-36 h-36 rounded-xl object-cover border-4 border-white/10">
+            <p>Hi — I'm <strong>Randell Maire Lodovice</strong>, a web developer passionate about creating engaging and intuitive web experiences. I enjoy solving problems with clean code and thoughtful design.</p>
+            <a href="pictures/Resumee.docx" download class="inline-block bg-accent text-[#02253a] px-5 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">📥 Download Resume</a>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-white/5 p-5 rounded-xl">
+              <h3 class="text-xl font-semibold mb-3">📜 Certificates</h3>
+              <div class="grid grid-cols-2 gap-3">
+                <figure class="text-center">
+                  <img src="pictures/CSS.png" class="rounded-lg w-full" alt="CSS certificate">
+                  <figcaption class="text-sm mt-2 text-muted">NC II - Computer Systems Servicing</figcaption>
+                </figure>
+                <figure class="text-center">
+                  <img src="pictures/EPAS.png" class="rounded-lg w-full" alt="EPAS certificate">
+                  <figcaption class="text-sm mt-2 text-muted">NC II - Electronics Assembly</figcaption>
+                </figure>
+              </div>
+              <a href="certificates/RMLodovice_Certificates.zip" download class="text-sm text-muted hover:text-accent mt-2 inline-block">📥 Download Certificates</a>
             </div>
-            <select name="country" id="country" required>
-              <option value="">Select city</option>
-              <option value="cebu">Cebu City</option>
-              <option value="toledo">Toledo City</option>
-              <option value="mandaue">Mandaue City</option>
-              <option value="consolacion">Consolacion</option>
-              <option value="lapu">Lapu-Lapu City</option>
-            </select>
-            <textarea name="subject" id="subject" placeholder="Write something..." required></textarea>
-            <button class="btn" type="submit">Submit</button>
-          </form>
+
+            <div class="bg-white/5 p-5 rounded-xl">
+              <h3 class="text-xl font-semibold mb-3">🏆 Achievements</h3>
+              <div class="grid grid-cols-2 gap-3">
+                <figure class="text-center">
+                  <img src="pictures/CSS.png" class="rounded-lg w-full" alt="achievement">
+                  <figcaption class="text-sm mt-2 text-muted">Top Performer – CSS</figcaption>
+                </figure>
+                <figure class="text-center">
+                  <img src="pictures/EPAS.png" class="rounded-lg w-full" alt="achievement">
+                  <figcaption class="text-sm mt-2 text-muted">Outstanding Award – EPAS</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="contact-image" aria-hidden="true">
-          <img src="pictures/contact.jpg" alt="Contact illustration" />
+      <!-- ATTENDANCE -->
+      <section id="attendance" class="py-20 px-6 bg-bgdark/40">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-2">🧾 Attendance Record</h2>
+          <p class="text-muted mb-6">Daily attendance sheet — switch between sheets below</p>
+
+          <div class="flex flex-wrap gap-3 mb-6">
+            <button class="tab-btn bg-accent text-[#02253a] font-semibold px-4 py-2 rounded-lg" data-target="sheet1">Sheet 1</button>
+            <button class="tab-btn bg-transparent text-muted border border-white/10 px-4 py-2 rounded-lg" data-target="sheet2">Sheet 2</button>
+          </div>
+
+          <div class="w-full h-[60vh] rounded-xl overflow-hidden border border-white/10">
+            <iframe id="sheet1" class="w-full h-full" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzIsvYvgSHIaZhExDRN9RNrOd_xIkitK--ks_uU88NCcCUmylN-190emsHM-BZD2D_MPCi5psPzbjV/pubhtml?gid=244490370&single=true"></iframe>
+            <iframe id="sheet2" class="hidden w-full h-full" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSomethingFakeToExample/pubhtml?gid=123456789&single=true"></iframe>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> RMLodovice. Built with ❤️.</p>
-    </div>
-  </footer>
+      <!-- CONTACT -->
+      <section id="contact" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div class="bg-white/5 p-6 rounded-xl">
+            <h2 class="text-3xl font-bold mb-3">Contact</h2>
+            <p class="text-muted mb-6">Swing by for a cup of coffee, or leave a message</p>
+            <form action="https://formspree.io/f/xanygbgr" method="POST" class="space-y-4">
+              <div class="flex flex-col md:flex-row gap-3">
+                <input name="firstname" placeholder="First name" required class="w-full p-3 bg-transparent border border-white/10 rounded-lg">
+                <input name="lastname" placeholder="Last name" required class="w-full p-3 bg-transparent border border-white/10 rounded-lg">
+              </div>
+              <select name="country" required class="w-full p-3 bg-transparent border border-white/10 rounded-lg">
+                <option value="">Select city</option>
+                <option value="cebu">Cebu City</option>
+                <option value="toledo">Toledo City</option>
+                <option value="mandaue">Mandaue City</option>
+                <option value="consolacion">Consolacion</option>
+                <option value="lapu">Lapu-Lapu City</option>
+              </select>
+              <textarea name="subject" placeholder="Write something..." required class="w-full p-3 bg-transparent border border-white/10 rounded-lg min-h-[120px]"></textarea>
+              <button type="submit" class="bg-accent text-[#02253a] px-5 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">Submit</button>
+            </form>
+          </div>
+          <div>
+            <img src="pictures/contact.jpg" alt="Contact illustration" class="rounded-xl shadow-lg hover:scale-105 transition-transform">
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <script>
-    // small interaction script: nav toggle, tab switcher, year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-6 text-center text-muted">
+      © <span id="year"></span> RMLodovice. Built with ❤️ and Tailwind CSS.
+    </footer>
 
-    // mobile nav
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    navToggle.addEventListener('click', ()=>{
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('open');
-    });
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
 
-    // tabs
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(t=> t.addEventListener('click', ()=>{
-      tabs.forEach(x=> { x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
-      t.classList.add('active'); t.setAttribute('aria-selected','true');
-      const target = t.getAttribute('data-target');
-      document.querySelectorAll('.sheet').forEach(s=> s.classList.add('hidden'));
-      document.getElementById(target).classList.remove('hidden');
-    }));
-
-    // Smooth scrolling for nav links
-    document.querySelectorAll('.nav-link').forEach(a=>{
-      a.addEventListener('click', (e)=>{
-        if (a.hash) { e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'}); }
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
-    });
-  </script>
-</body>
+
+      const tabs = document.querySelectorAll('.tab-btn');
+      const sheets = { sheet1: document.getElementById('sheet1'), sheet2: document.getElementById('sheet2') };
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('bg-accent', 'text-[#02253a]'));
+          tabs.forEach(t => t.classList.add('bg-transparent', 'text-muted'));
+          tab.classList.remove('bg-transparent', 'text-muted');
+          tab.classList.add('bg-accent', 'text-[#02253a]');
+          Object.values(sheets).forEach(s => s.classList.add('hidden'));
+          sheets[tab.dataset.target].classList.remove('hidden');
+        });
+      });
+    </script>
+
+    <style>
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in { animation: fade-in 1s ease-out; }
+      .animate-fade-in-up { animation: fade-in 1.2s ease-out; }
+    </style>
+  </body>
 </html>
